@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sho.iml" filepath="$PROJECT_DIR$/.idea/Sho.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sho-admin/sho-admin.iml" filepath="$PROJECT_DIR$/sho-admin/sho-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sho-base/sho-base.iml" filepath="$PROJECT_DIR$/sho-base/sho-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sho-common/sho-common.iml" filepath="$PROJECT_DIR$/sho-common/sho-common.iml" />
+    </modules>
+  </component>
+</project>

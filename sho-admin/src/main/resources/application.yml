@@ -1,0 +1,42 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      username: root
+      password: 123455
+      url: jdbc:mysql://localhost:3306/sho?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      # 过滤器
+      filter: stat,wall,log4j,config
+      # 最大连接数
+      max-active: 100
+      # 初始化大小
+      initial-size: 1
+      # 等待超时时间
+      max-wait: 60000
+      # 最小连接数
+      min-idle: 1
+      # 检测时间，关闭空闲连接
+      time-between-eviction-runs-millis: 60000
+      # 连接池中连接最小存活时间
+      min-evictable-idle-time-millis: 300000
+
+      validation-query: select 'x'
+      test-while-idle: true
+      test-on-return: false
+      test-on-borrow: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 50
+      max-pool-prepared-statement-per-connection-size: 20
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.shaoyu.sho.admin.model
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: false
+  params: count=countSql
