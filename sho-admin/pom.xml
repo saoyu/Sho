@@ -17,7 +17,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<jjwt.version>0.10.8</jjwt.version>
-		<mysql.version>8.0.15</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<start-class>com.shaoyu.sho.admin.ShoAdminApplication</start-class>
 	</properties>
 	<dependencies>
